@@ -1,0 +1,32 @@
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6">
+      <p> Local:</p>
+      <video #local_video [autoplay]="true" [muted] = "true"></video>
+    </ion-col>
+    <ion-col size="6">
+      <p> Remote:</p>
+      <video #remote_video [autoplay]="true"></video>
+    </ion-col>
+    <ion-col size="6">
+      <p> Remote:</p>
+      <video #remote_video2 [autoplay]="true"></video>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="3">
+      <ion-button color="primary" (click)="startLocalVideo()" expand="block" fill="clear" shape="round">Start Local</ion-button>
+    </ion-col>
+    <ion-col size="3">
+      <ion-button color="primary" (click)="pauseLocalVideo()" expand="block" fill="clear" shape="round">Stop</ion-button>
+    </ion-col>
+    <ion-col size="3">
+      <ion-button color="primary" (click)="call()" expand="block" fill="clear" shape="round">Call</ion-button>
+    </ion-col>
+    <ion-col size="3">
+      <ion-button color="primary" (click)="hangUp()" expand="block" fill="clear" shape="round">Hangup</ion-button>
+    </ion-col>
+  </ion-row>
+  
+</ion-grid>
